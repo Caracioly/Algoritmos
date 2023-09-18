@@ -1,3 +1,3 @@
 # Algoritmos
 
-# > [Resumo](https://caracioly.github.io/algoritmos/)
+## [Resumo](https://caracioly.github.io/algoritmos/)

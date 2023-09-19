@@ -1,64 +1,42 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>resumo</title>
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resumo</title>
+    <link rel="stylesheet" href="https://stackedit.io/style.css" />
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+  </head>
 
-<body class="stackedit">
-  <div class="stackedit__left">
-    <div class="stackedit__toc">
-      
-<ul>
-<li><a href="#pesquisa-binária">Pesquisa Binária</a>
-<ul>
-<li></li>
-</ul>
-</li>
-<li><a href="#ordenação-por-seleção">Ordenação por Seleção</a>
-<ul>
-<li></li>
-</ul>
-</li>
-<li><a href="#recursão">Recursão</a>
-<ul>
-<li></li>
-</ul>
-</li>
-<li><a href="#quicksort">Quicksort</a>
-<ul>
-<li></li>
-</ul>
-</li>
-<li><a href="#tabelas-hash">Tabelas Hash</a>
-<ul>
-<li></li>
-</ul>
-</li>
-<li><a href="#pesquisa-em-largura">Pesquisa em Largura</a>
-<ul>
-<li></li>
-</ul>
-</li>
-</ul>
+  <body class="stackedit">
+    <div class="stackedit__left">
+      <div class="stackedit__toc">
+        <ul>
+          <li><button class="dark-mode-toggle" onclick="darkMode()">Dark Mode</button></li>
+          <li><a href="#pesquisa-binária">Pesquisa Binária</a>
+          <li><a href="#ordenação-por-seleção">Ordenação por Seleção</a>
+          <li><a href="#recursão">Recursão</a>
+          <li><a href="#quicksort">Quicksort</a>
+          <li><a href="#tabelas-hash">Tabelas Hash</a>
+          <li><a href="#pesquisa-em-largura">Pesquisa em Largura</a>
+        </ul>
 
+      </div>
     </div>
-  </div>
-  <div class="stackedit__right">
-    <div class="stackedit__html">
-      <h1 id="pesquisa-binária">Pesquisa Binária</h1>
-<ol>
-<li>A pesquisa binária é muito mais rápida do que a pesquisa simples.</li>
-<li><strong>O(log n)</strong> é mais rápido do que <strong>O(n)</strong>, e <strong>O(log n)</strong> fica ainda mais rápido conforme os elementos da lista aumentam.</li>
-<li>A rapidez de um Algoritmo <strong>não</strong> é medida em <strong>segundos</strong>.</li>
-<li>O tempo de execução de um algoritmo é medido por meio de seu <strong>crescimento</strong>.</li>
-<li>O tempo de execução dos algoritmos é expresso na notação <strong>Big O</strong>.</li>
-</ol>
-<h3 id="exemplo-de-código">Exemplo de Código</h3>
-<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span>  <span class="token function">pesquisa_binaria</span><span class="token punctuation">(</span>lista<span class="token punctuation">,</span> item<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <div class="stackedit__right">
+      <div class="stackedit__html">
+        <h1 id="pesquisa-binária">Pesquisa Binária</h1>
+        <ol>
+          <li>A pesquisa binária é muito mais rápida do que a pesquisa simples.</li>
+          <li><strong>O(log n)</strong> é mais rápido do que <strong>O(n)</strong>, e <strong>O(log n)</strong> fica ainda mais rápido conforme os elementos da lista aumentam.</li>
+          <li>A rapidez de um Algoritmo <strong>não</strong> é medida em <strong>segundos</strong>.</li>
+          <li>O tempo de execução de um algoritmo é medido por meio de seu <strong>crescimento</strong>.</li>
+          <li>O tempo de execução dos algoritmos é expresso na notação <strong>Big O</strong>.</li>
+        </ol>
+        <h3 id="exemplo-de-código">Exemplo de Código</h3>
+        <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span>  <span class="token function">pesquisa_binaria</span><span class="token punctuation">(</span>lista<span class="token punctuation">,</span> item<span class="token punctuation">)</span><span class="token punctuation">:</span>
    baixo  <span class="token operator">=</span>  <span class="token number">0</span>
    alto  <span class="token operator">=</span>  <span class="token builtin">len</span><span class="token punctuation">(</span>lista<span class="token punctuation">)</span> <span class="token operator">-</span>  <span class="token number">1</span>
    <span class="token keyword">while</span>  baixo  <span class="token operator">&lt;=</span>  alto<span class="token punctuation">:</span>
@@ -72,18 +50,18 @@
    		baixo  <span class="token operator">=</span>  meio  <span class="token operator">+</span>  <span class="token number">1</span>
    <span class="token keyword">raise</span>  ValueError<span class="token punctuation">(</span>f<span class="token string">"Elemento {item} não foi encontrado na lista."</span><span class="token punctuation">)</span>
 </code></pre>
-<h1 id="ordenação-por-seleção">Ordenação por Seleção</h1>
-<ol>
-<li>A memória do seu computador é como um conjunto <strong>gigante</strong> de <strong>gavetas</strong>.</li>
-<li>Quando se quer armazenar múltiplos elementos, usa-se um <code>array</code> ou uma <code>lista</code>.</li>
-<li>No <code>array</code>, todos os elementos são <strong>armazenados</strong> um ao lado do outro <strong>(na memória)</strong>.</li>
-<li>Na <code>lista</code> os elementos estão <strong>espalhados</strong>, e um elemento armazena o endereço do próximo elemento.</li>
-<li><code>Arrays</code> permitem <strong>leituras rápidas</strong>.</li>
-<li><code>Listas</code> encadeadas permitem <strong>rápidas inserções</strong> e <strong>eliminações</strong>.</li>
-<li>Todos os <strong>elementos</strong> de um <code>array</code> devem ser do mesmo <strong>tipo</strong> (<code>ints</code>, <code>doubles</code>, e assim por diante).</li>
-</ol>
-<h3 id="exemplo-de-código-1">Exemplo de Código</h3>
-<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span>  <span class="token function">busca_menor</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <h1 id="ordenação-por-seleção">Ordenação por Seleção</h1>
+        <ol>
+          <li>A memória do seu computador é como um conjunto <strong>gigante</strong> de <strong>gavetas</strong>.</li>
+          <li>Quando se quer armazenar múltiplos elementos, usa-se um <code>array</code> ou uma <code>lista</code>.</li>
+          <li>No <code>array</code>, todos os elementos são <strong>armazenados</strong> um ao lado do outro <strong>(na memória)</strong>.</li>
+          <li>Na <code>lista</code> os elementos estão <strong>espalhados</strong>, e um elemento armazena o endereço do próximo elemento.</li>
+          <li><code>Arrays</code> permitem <strong>leituras rápidas</strong>.</li>
+          <li><code>Listas</code> encadeadas permitem <strong>rápidas inserções</strong> e <strong>eliminações</strong>.</li>
+          <li>Todos os <strong>elementos</strong> de um <code>array</code> devem ser do mesmo <strong>tipo</strong> (<code>ints</code>, <code>doubles</code>, e assim por diante).</li>
+        </ol>
+        <h3 id="exemplo-de-código-1">Exemplo de Código</h3>
+        <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span>  <span class="token function">busca_menor</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">:</span>
    menor  <span class="token operator">=</span>  arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
    menor_indice  <span class="token operator">=</span>  <span class="token number">0</span>
    <span class="token keyword">for</span>  i  <span class="token keyword">in</span>  <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -99,31 +77,31 @@
    	novo_arr<span class="token punctuation">.</span>append<span class="token punctuation">(</span>arr<span class="token punctuation">.</span>pop<span class="token punctuation">(</span>menor<span class="token punctuation">)</span><span class="token punctuation">)</span>
    <span class="token keyword">return</span>  novo_arr
 </code></pre>
-<h1 id="recursão">Recursão</h1>
-<ol>
-<li><strong>Recursão</strong> é quando uma <code>função</code> <strong>chama a si mesma</strong>.</li>
-<li>Toda <code>função</code> recursiva tem dois casos: o <strong>caso-base</strong> e o caso <strong>recursivo</strong>.</li>
-<li>Uma <strong>pilha</strong>  tem duas operações: <code>push</code> e <code>pop</code>.</li>
-<li>Todas as <strong>chamadas</strong> de <code>função</code> vão para a <strong>pilha de chamada</strong>(<code>call stack</code>).</li>
-<li>A <strong>pilha de chamada</strong> pode ficar muito grande e ocupar muita memória.</li>
-</ol>
-<h3 id="exemplo-de-código-2">Exemplo de Código</h3>
-<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span>  <span class="token function">fat</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <h1 id="recursão">Recursão</h1>
+        <ol>
+          <li><strong>Recursão</strong> é quando uma <code>função</code> <strong>chama a si mesma</strong>.</li>
+          <li>Toda <code>função</code> recursiva tem dois casos: o <strong>caso-base</strong> e o caso <strong>recursivo</strong>.</li>
+          <li>Uma <strong>pilha</strong> tem duas operações: <code>push</code> e <code>pop</code>.</li>
+          <li>Todas as <strong>chamadas</strong> de <code>função</code> vão para a <strong>pilha de chamada</strong>(<code>call stack</code>).</li>
+          <li>A <strong>pilha de chamada</strong> pode ficar muito grande e ocupar muita memória.</li>
+        </ol>
+        <h3 id="exemplo-de-código-2">Exemplo de Código</h3>
+        <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span>  <span class="token function">fat</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
 	<span class="token keyword">if</span>  x  <span class="token operator">&lt;=</span>  <span class="token number">1</span><span class="token punctuation">:</span>
 		<span class="token keyword">return</span>  <span class="token number">1</span>
 <span class="token keyword">return</span>  x  <span class="token operator">*</span>  fat<span class="token punctuation">(</span>x  <span class="token operator">-</span>  <span class="token number">1</span><span class="token punctuation">)</span>
 </code></pre>
-<h1 id="quicksort">Quicksort</h1>
-<ol>
-<li>A estratégia <strong>DC</strong>(<em>Dividir para Conquistar</em>) funciona por meio da <strong>divisão do problema</strong> em <strong>problemas menores</strong>.</li>
-<li>Se você estiver utilizando <strong>DC</strong> em uma lista, o <strong>caso-base</strong> provavelmente será um <code>array</code> vazio ou com apenas um elemento.</li>
-<li>Se você estiver implementando o <strong>quicksort</strong>, escolha um elemento aleatório como o <strong>pivô</strong>.</li>
-<li>O tempo de execução médio do <strong>quicksort</strong> é <strong>O(n log n)!</strong></li>
-<li>A constante, na notação <strong>Big O</strong>, pode ser relevante em alguns casos. Está é a razão pela qual o <strong>quicksort</strong> é mais rápido do que o <strong>mergesort</strong>.</li>
-<li>A constante dificilmente, será relevante na comparação entre <strong>pesquisa simples</strong> e <strong>pesquisa binária</strong>, pois <strong>O(log n)</strong> é muito mais rápido do que <strong>O(n)</strong> quando sua lista é grande.</li>
-</ol>
-<h3 id="exemplo-de-código-3">Exemplo de Código:</h3>
-<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span>  <span class="token function">quickSort</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <h1 id="quicksort">Quicksort</h1>
+        <ol>
+          <li>A estratégia <strong>DC</strong>(<em>Dividir para Conquistar</em>) funciona por meio da <strong>divisão do problema</strong> em <strong>problemas menores</strong>.</li>
+          <li>Se você estiver utilizando <strong>DC</strong> em uma lista, o <strong>caso-base</strong> provavelmente será um <code>array</code> vazio ou com apenas um elemento.</li>
+          <li>Se você estiver implementando o <strong>quicksort</strong>, escolha um elemento aleatório como o <strong>pivô</strong>.</li>
+          <li>O tempo de execução médio do <strong>quicksort</strong> é <strong>O(n log n)!</strong></li>
+          <li>A constante, na notação <strong>Big O</strong>, pode ser relevante em alguns casos. Está é a razão pela qual o <strong>quicksort</strong> é mais rápido do que o <strong>mergesort</strong>.</li>
+          <li>A constante dificilmente, será relevante na comparação entre <strong>pesquisa simples</strong> e <strong>pesquisa binária</strong>, pois <strong>O(log n)</strong> é muito mais rápido do que <strong>O(n)</strong> quando sua lista é grande.</li>
+        </ol>
+        <h3 id="exemplo-de-código-3">Exemplo de Código:</h3>
+        <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span>  <span class="token function">quickSort</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">:</span>
 	<span class="token keyword">if</span>  <span class="token builtin">len</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span> <span class="token operator">&lt;</span>  <span class="token number">2</span><span class="token punctuation">:</span>
 		<span class="token keyword">return</span>  array
   pivo  <span class="token operator">=</span>  array<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
@@ -131,17 +109,17 @@
   maiores  <span class="token operator">=</span> <span class="token punctuation">[</span>i  <span class="token keyword">for</span>  i  <span class="token keyword">in</span>  array<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token keyword">if</span>  i  <span class="token operator">&gt;</span>  pivo<span class="token punctuation">]</span>
   <span class="token keyword">return</span>  quickSort<span class="token punctuation">(</span>menores<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">[</span>pivo<span class="token punctuation">]</span> <span class="token operator">+</span>  quickSort<span class="token punctuation">(</span>maiores<span class="token punctuation">)</span>
 </code></pre>
-<h1 id="tabelas-hash">Tabelas Hash</h1>
-<ol>
-<li>Você pode fazer uma tabela <code>hash</code> ao combinar uma função <code>hash</code> com um <code>array</code>.</li>
-<li><strong>Colisões</strong> são <strong>problemas</strong>. É necessário haver uma <code>função</code> <code>hash</code> que minimize colisões.</li>
-<li>As tabelas <code>hash</code> são boas para modelar relações entre dois itens.</li>
-<li>Se o seu fator de carga for <strong>maior que 0.7</strong>, será necessário redimensionar a sua tabela <code>hash</code>.</li>
-<li>As tabelas <code>hash</code> são utilizadas como cache de dados (como em um servidor da web, por exemplo).</li>
-<li>Tabelas <code>hash</code> são ótimas para <strong>localizar duplicatas</strong>.</li>
-</ol>
-<h3 id="exemplo-de-código-4">Exemplo de Código</h3>
-<pre class=" language-python"><code class="prism  language-python">votaram <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        <h1 id="tabelas-hash">Tabelas Hash</h1>
+        <ol>
+          <li>Você pode fazer uma tabela <code>hash</code> ao combinar uma função <code>hash</code> com um <code>array</code>.</li>
+          <li><strong>Colisões</strong> são <strong>problemas</strong>. É necessário haver uma <code>função</code> <code>hash</code> que minimize colisões.</li>
+          <li>As tabelas <code>hash</code> são boas para modelar relações entre dois itens.</li>
+          <li>Se o seu fator de carga for <strong>maior que 0.7</strong>, será necessário redimensionar a sua tabela <code>hash</code>.</li>
+          <li>As tabelas <code>hash</code> são utilizadas como cache de dados (como em um servidor da web, por exemplo).</li>
+          <li>Tabelas <code>hash</code> são ótimas para <strong>localizar duplicatas</strong>.</li>
+        </ol>
+        <h3 id="exemplo-de-código-4">Exemplo de Código</h3>
+        <pre class=" language-python"><code class="prism  language-python">votaram <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 
 <span class="token keyword">def</span> <span class="token function">verifica_eleitor</span><span class="token punctuation">(</span>nome<span class="token punctuation">)</span><span class="token punctuation">:</span>
    <span class="token keyword">if</span> votaram<span class="token punctuation">.</span>get<span class="token punctuation">(</span>nome<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -150,63 +128,64 @@
    	votaram<span class="token punctuation">[</span>nome<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">True</span>
    	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Deixe votar !"</span><span class="token punctuation">)</span>
 </code></pre>
-<h1 id="pesquisa-em-largura">Pesquisa em Largura</h1>
-<ol>
-<li>A pesquisa em largura lhe diz se há um caminho de <strong>A</strong> para <strong>B</strong>.</li>
-<li>Se esse caminho <strong>existir</strong>, a pesquisa em largura lhe dará o <strong>caminho mínimo</strong>.</li>
-<li>Se você tem um problema do tipo, “<strong>encontre o menor X</strong>”, tente modelar o seu problema utilizando <code>grafos</code> e use a pesquisa em largura para resolve-lo.</li>
-<li>Um dígrafo contém setas e as relações seguem a direção das setas(<strong>Rama</strong> -&gt; <strong>Adit</strong> significa “<strong>Rama</strong> deve dinheiro a <strong>Adit</strong>”).</li>
-<li><code>Grafos</code> não direcionados não contêm setas, e a relação acontece nos dois sentidos (<strong>Ross</strong> - <strong>Rachel</strong> significa “<strong>Ross</strong> namorou <strong>Rachel</strong> e <strong>Rachel</strong> namorou <strong>Ross</strong>”).</li>
-<li>Filas são <strong>FIFO</strong> (primeiro a entrar, primeiro a sair).</li>
-<li>Pilhas <strong>LIFO</strong> (ultimo a entrar, primeiro a sair).</li>
-<li>Você precisa verificar as pessoas na <strong>ordem</strong> em que elas <strong>foram adicionadas</strong> à lista de pesquisa. Portanto a lista de pesquisa deve ser uma fila; caso contrário, você não obterá o caminho mínimo.</li>
-<li>Cada vez que você precisar verificar alguém, procure <strong>não</strong> verifica-lo novamente. Caso contrário, poderá acabar em um <em>loop infinito</em>.</li>
-</ol>
-<h3 id="grafo">Grafo</h3>
+        <h1 id="pesquisa-em-largura">Pesquisa em Largura</h1>
+        <ol>
+          <li>A pesquisa em largura lhe diz se há um caminho de <strong>A</strong> para <strong>B</strong>.</li>
+          <li>Se esse caminho <strong>existir</strong>, a pesquisa em largura lhe dará o <strong>caminho mínimo</strong>.</li>
+          <li>Se você tem um problema do tipo, “<strong>encontre o menor X</strong>”, tente modelar o seu problema utilizando <code>grafos</code> e use a pesquisa em largura para resolve-lo.</li>
+          <li>Um dígrafo contém setas e as relações seguem a direção das setas(<strong>Rama</strong> -&gt; <strong>Adit</strong> significa “<strong>Rama</strong> deve dinheiro a <strong>Adit</strong>”).</li>
+          <li><code>Grafos</code> não direcionados não contêm setas, e a relação acontece nos dois sentidos (<strong>Ross</strong> - <strong>Rachel</strong> significa “<strong>Ross</strong> namorou <strong>Rachel</strong> e <strong>Rachel</strong> namorou <strong>Ross</strong>”).</li>
+          <li>Filas são <strong>FIFO</strong> (primeiro a entrar, primeiro a sair).</li>
+          <li>Pilhas <strong>LIFO</strong> (ultimo a entrar, primeiro a sair).</li>
+          <li>Você precisa verificar as pessoas na <strong>ordem</strong> em que elas <strong>foram adicionadas</strong> à lista de pesquisa. Portanto a lista de pesquisa deve ser uma fila; caso contrário, você não obterá o caminho mínimo.</li>
+          <li>Cada vez que você precisar verificar alguém, procure <strong>não</strong> verifica-lo novamente. Caso contrário, poderá acabar em um <em>loop infinito</em>.</li>
+        </ol>
+        <h3 id="grafo">Grafo</h3>
 
-<table>
-<thead>
-<tr>
-<th>Pessoa</th>
-<th>Amigos</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>voce</td>
-<td>alice, bob, claire</td>
-</tr>
-<tr>
-<td>bob</td>
-<td>anuj, peggy</td>
-</tr>
-<tr>
-<td>alice</td>
-<td>anuj, peggy</td>
-</tr>
-<tr>
-<td>claire</td>
-<td>thom, jhonny</td>
-</tr>
-<tr>
-<td>anuj</td>
-<td></td>
-</tr>
-<tr>
-<td>peggy</td>
-<td></td>
-</tr>
-<tr>
-<td>thom</td>
-<td></td>
-</tr>
-<tr>
-<td>jhonny</td>
-<td></td>
-</tr>
-</tbody>
-</table><h3 id="exemplo-de-código-5">Exemplo de Código</h3>
-<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">from</span> collections <span class="token keyword">import</span>  deque
+        <table>
+          <thead>
+            <tr>
+              <th>Pessoa</th>
+              <th>Amigos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>voce</td>
+              <td>alice, bob, claire</td>
+            </tr>
+            <tr>
+              <td>bob</td>
+              <td>anuj, peggy</td>
+            </tr>
+            <tr>
+              <td>alice</td>
+              <td>anuj, peggy</td>
+            </tr>
+            <tr>
+              <td>claire</td>
+              <td>thom, jhonny</td>
+            </tr>
+            <tr>
+              <td>anuj</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>peggy</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>thom</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>jhonny</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 id="exemplo-de-código-5">Exemplo de Código</h3>
+        <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">from</span> collections <span class="token keyword">import</span>  deque
 
 grafo  <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 grafo<span class="token punctuation">[</span><span class="token string">"voce"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"alice"</span><span class="token punctuation">,</span> <span class="token string">"bob"</span><span class="token punctuation">,</span> <span class="token string">"claire"</span><span class="token punctuation">]</span>
@@ -239,8 +218,8 @@ grafo<span class="token punctuation">[</span><span class="token string">"jhonny"
 pesquisa<span class="token punctuation">(</span><span class="token string">"voce"</span><span class="token punctuation">)</span>
 </code></pre>
 
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 
 </html>

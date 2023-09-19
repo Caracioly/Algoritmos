@@ -27,6 +27,12 @@ Aqui estão alguns dos algoritmos e funções que você encontrará neste reposi
 - [Quicksort](https://github.com/Caracioly/algoritmos/blob/main/codigos/quicksort.py)
   - Um algoritmo de ordenação rápido e eficiente baseado na estratégia "dividir para conquistar".
 
+- [Hash](https://github.com/Caracioly/algoritmos/blob/main/codigos/hash.py)
+  - Um algoritmo de tabela hash que mapeia chaves para valores e permite acesso rápido aos valores com base em suas chaves.
+
+- [Pesquisa em Largura](https://github.com/Caracioly/algoritmos/blob/main/codigos/pesquisa_em_largura.py)
+  - Um algoritmo de busca que explora todos os vértices de um grafo em largura a partir de um ponto de partida, útil para encontrar o caminho mais curto entre dois pontos em um grafo não ponderado.
+
 ## Como Usar Este Repositório
 
 Você pode explorar os códigos-fonte e os exemplos de cada algoritmo e função clicando nos links fornecidos.

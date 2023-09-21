@@ -7,4 +7,4 @@ def quickSort(array):
     return quickSort(menores) + [pivo] + quickSort(maiores)
 
 
-print(f"quicksort: {quickSort([33, 15, 10, 5, 2, 3])}")
+quickSort([33, 15, 10, 5, 2, 3])

@@ -10,7 +10,7 @@ Aqui estão alguns dos algoritmos e funções que você encontrará neste reposi
   - Uma função que calcula a soma de todos os elementos de uma lista.
 
 - [Tamanho da Lista](https://github.com/Caracioly/algoritmos/blob/main/codigos/len.py)
-  - Uma função que determina o tamanho de uma lista.
+  - Uma função que calcula o tamanho de uma lista.
 
 - [Encontrando o Maior Valor em uma Lista](https://github.com/Caracioly/algoritmos/blob/main/codigos/maior_valor.py)
   - Uma função que encontra o maior valor em uma lista.
@@ -44,6 +44,6 @@ Contribuições são bem-vindas! Se você deseja adicionar mais algoritmos, corr
 
 ## Autor
 
-- [André Caracioly](https://github.com/Caracioly)
+<img loading="lazy" src="https://avatars.githubusercontent.com/u/120474277?v=4" width=115><br>[<sub>André Caracioly</sub>](https://github.com/Caracioly)
 
 Espero que este repositório seja útil em sua jornada de estudos e programação. Divirta-se explorando os algoritmos e aprimorando suas habilidades!

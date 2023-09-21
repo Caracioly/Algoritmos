@@ -16,7 +16,7 @@ def pesquisa_binaria(lista, item):
 
 minha_lista = [1, 3, 5, 7, 9]
 try:
-    print(pesquisa_binaria(minha_lista, 3))  # -> maior que 1
-    print(pesquisa_binaria(minha_lista, 50))  # -> none
+    pesquisa_binaria(minha_lista, 3)  # -> maior que 1
+    pesquisa_binaria(minha_lista, 50)  # -> none
 except ValueError as e:
     print(e)

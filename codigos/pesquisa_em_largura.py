@@ -32,4 +32,4 @@ def pessoa_e_vendedor(nome):
     return nome[-1] == "m"
 
 
-print(pesquisa("voce"))
+pesquisa("voce")

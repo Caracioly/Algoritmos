@@ -16,4 +16,4 @@ def buscaMenor(arr):
     return menor_indice
 
 
-print(ordenacaoPorSelecao([5, 3, 6, 2, 10]))
+ordenacaoPorSelecao([5, 3, 6, 2, 10])

@@ -5,4 +5,4 @@ def fat(x):
         return x * fat(x - 1)
 
 
-print(f"Fatorial é {fat(5)}")
+fat(5)

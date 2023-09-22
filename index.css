@@ -1,11 +1,16 @@
 .dark-mode {
     background-color: #2b3137;
     color: white;
-    blockquote {
-        color: #8191a0;     
-    }
-  }
+    
+}
 
+.dark-mode blockquote {
+    color: #8191a0; 
+}
+
+blockquote {
+    color: #373737;
+}
 
 .dark-mode-toggle {
     background-color: #2b3137;

@@ -21,6 +21,7 @@
           <li><a href="#quicksort">Quicksort</a>
           <li><a href="#tabelas-hash">Tabelas Hash</a>
           <li><a href="#pesquisa-em-largura">Pesquisa em Largura</a>
+          <li><a href="#dijkstra">Dijkstra</a>
         </ul>
 
       </div>
@@ -262,7 +263,23 @@ Essa técnica é eficaz na descoberta de rotas curtas em uma ampla variedade de 
 <h3 id="exemplo-de-código-5">Exemplo de Código</h3>
 <p><img src="https://i.ibb.co/Tmb4V3w/Captura-de-tela-de-2023-09-21-09-35-08.png" alt=""><br>
 <a href="https://github.com/Caracioly/algoritmos/blob/main/codigos/pesquisa_em_largura.py">Copiar</a></p>
-
+<h1 id="dijkstra">Dijkstra</h1>
+<ol>
+  <li>A <code>pesquisa em largura</code> é usada para calcular o caminho <strong>mínimo</strong> para um grafo <strong>não</strong> ponderado.</li>
+  <li>O <code>algoritmo de Dijkstra</code> é usado para calcular o caminho <strong>mínimo</strong> para um <code>grafo ponderado</code>.</li>
+  <li>O <code>algoritmo de Dijkstra</code> <strong>funciona</strong> quando todos os pesos <strong>são positivos</strong>.</li>
+  <li>Se o seu <code>grafo</code> tiver pesos negativos, use o algoritmo de <a href="https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/">Bellman-Ford</a>,</li>
+</ol>
+<blockquote>
+  <h3 id="pensamentos-6">Pensamentos</h3>
+  <p> Algoritmo de Dijkstra é uma técnica usada para encontrar o caminho mais curto entre um ponto de partida e todos os outros pontos em um grafo ponderado. Ele é amplamente utilizado em problemas de roteamento, otimização e sistemas de navegação.<br>
+  A principal ideia por trás do algoritmo é a busca por caminhos mais curtos, começando pelo ponto de partida e gradualmente explorando os nós vizinhos. O algoritmo mantém um conjunto de nodos não processados e seus custos associados. Inicialmente, todos os custos são definidos como infinito, exceto o custo do nó de partida, que é definido como zero.<br>
+  Em cada iteração, o algoritmo seleciona o nó com o custo mais baixo entre os nodos não processados e o marca como processado. Em seguida, atualiza os custos dos nodos vizinhos se um caminho mais curto for encontrado através do nó atual. Este processo é repetido até que todos os nodos tenham sido processados ou até que o destino desejado seja alcançado.<br>
+  </p>
+  </blockquote>
+  <h3 id="exemplo-de-código-6">Exemplo de Código</h3>
+  <a href="https://ibb.co/9Y9P5Cd"><img src="https://i.ibb.co/12fcWw4/dijkstra.png" alt="dijkstra" border="0"></a><br /><a target='_blank'>
+  <a href="https://github.com/Caracioly/algoritmos/blob/main/codigos/dijkstra.py">Copiar</a></p>
     </div>
   </div>
 </body>

@@ -33,6 +33,10 @@ Aqui estão alguns dos algoritmos e funções que você encontrará neste reposi
 - [Pesquisa em Largura](https://github.com/Caracioly/algoritmos/blob/main/codigos/pesquisa_em_largura.py)
   - Um algoritmo de busca que explora todos os vértices de um grafo em largura a partir de um ponto de partida, útil para encontrar o caminho mais curto entre dois pontos em um grafo não ponderado.
 
+- [Dijkstra](https://github.com/Caracioly/algoritmos/blob/main/codigos/dijkstra.py)
+  - Um algoritmo que busca o caminho mais curto entre um nó de início e todos os outros nós em um grafo ponderado com pesos não negativos.
+    
+
 ## Como Usar Este Repositório
 
 Você pode explorar os códigos-fonte e os exemplos de cada algoritmo e função clicando nos links fornecidos.
@@ -40,7 +44,7 @@ Encontrará uma documentação maior em https://caracioly.github.io/algoritmos/
 
 ## Contribuição
 
-Contribuições são bem-vindas! Se você deseja adicionar mais algoritmos, corrigir erros ou melhorar a documentação, sinta-se à vontade para abrir um Pull Request.
+Contribuições são muito bem-vindas! Sinta-se à vontade para abrir um Pull Request se você quiser adicionar mais algoritmos, corrigir erros ou melhorar a documentação.
 
 ## Autor
 

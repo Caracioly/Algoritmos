@@ -11,21 +11,27 @@
 blockquote {
     color: #373737;
 }
-
+.paragraph{
+    z-index: 1;
+}
 .dark-mode-toggle {
-    background-color: #2b3137;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
+    background-color: transparent;
+    border: transparent;
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    border-radius: 22px;
     cursor: pointer;
-    outline: none;
-    font-size: 16px;
     transition: background-color 0.3s, color 0.3s;
+    overflow: hidden;
+    z-index: 4;
 }
 
-.dark-mode-toggle:hover {
-    background-color: #444;
+#image-btn{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    z-index: 5;
 }
 
 .dark-mode-toggle.dark-mode {

@@ -14,19 +14,21 @@
     <div class="stackedit__left">
       <div class="stackedit__toc">
         <ul>
-          <li><button class="dark-mode-toggle" onclick="darkMode()">Modo Escuro</button></li>
           <li><a href="#pesquisa-binária">Pesquisa Binária</a>
-          <li><a href="#ordenação-por-seleção">Ordenação por Seleção</a>
-          <li><a href="#recursão">Recursão</a>
-          <li><a href="#quicksort">Quicksort</a>
-          <li><a href="#tabelas-hash">Tabelas Hash</a>
-          <li><a href="#pesquisa-em-largura">Pesquisa em Largura</a>
-          <li><a href="#dijkstra">Dijkstra</a>
-        </ul>
-
-      </div>
-    </div>
-    <div class="stackedit__right">
+            <li><a href="#ordenação-por-seleção">Ordenação por Seleção</a>
+              <li><a href="#recursão">Recursão</a>
+                <li><a href="#quicksort">Quicksort</a>
+                  <li><a href="#tabelas-hash">Tabelas Hash</a>
+                    <li><a href="#pesquisa-em-largura">Pesquisa em Largura</a>
+                      <li><a href="#dijkstra">Dijkstra</a>
+                      </ul>
+                      
+                    </div>
+                  </div>
+                  <div class="stackedit__right">
+      <li><button class="dark-mode-toggle" onclick="darkMode()">
+      <img id="image-btn"  src="to-dark.png">
+      </button></li>
       <div class="stackedit__html">
       <h1 id="pesquisa-binária">Pesquisa Binária</h1>
 <ol>
@@ -42,7 +44,7 @@
 No método convencional, leríamos a lista procurando nosso elemento um por um. Isso não é um problema quando a lista é pequena, mas quando ela se torna gigantesca, a abordagem se torna impraticável. É aí que a pesquisa binária entra em cena, pois, em vez de percorrer a lista elemento por elemento, você inicia a busca no meio da lista, com base em critérios específicos relacionados à ordenação, e, a partir daí, reduz as possibilidades pela metade. A pesquisa binária é especialmente eficiente para listas ordenadas, pois utiliza uma estratégia de divisão e conquista, dividindo repetidamente o espaço de busca pela metade até encontrar o elemento desejado.</p>
 </blockquote>
 <h3 id="exemplo-de-código">Exemplo de Código</h3>
-<p><img src="https://i.ibb.co/dfPQqrp/Captura-de-tela-de-2023-09-21-08-09-17.png" alt=""><br>
+<p class="paragraph" ><img src="https://i.ibb.co/dfPQqrp/Captura-de-tela-de-2023-09-21-08-09-17.png" alt=""><br>
 <a href="https://github.com/Caracioly/algoritmos/blob/main/codigos/pesquisa_binaria.py">Copiar</a></p>
 <h1 id="ordenação-por-seleção">Ordenação por Seleção</h1>
 <ol>
@@ -143,7 +145,7 @@ No entanto, em um array, as coisas funcionam de maneira um pouco diferente:</p>
 </table><p>Agora que compreendemos essas diferenças, podemos prosseguir para o nosso algoritmo de ordenação mais simples, a Ordenação por Seleção. Este algoritmo envolve a busca do menor/maior valor em uma lista desordenada e colocando-o como o primeiro elemento em uma nova lista. Repetimos esse processo em um loop até esvaziarmos a lista desordenada, resultando em uma lista ordenada.</p>
 </blockquote>
 <h3 id="exemplo-de-código-1">Exemplo de Código</h3>
-<p><img src="https://i.ibb.co/2tQKWkF/Captura-de-tela-de-2023-09-21-09-12-33.png" alt=""><br>
+<p><img class="paragraph" src="https://i.ibb.co/2tQKWkF/Captura-de-tela-de-2023-09-21-09-12-33.png" alt=""><br>
 <a href="https://github.com/Caracioly/algoritmos/blob/main/codigos/ordenacao_selecao.py">Copiar</a></p>
 <h1 id="recursão">Recursão</h1>
 <ol>
@@ -160,7 +162,7 @@ As recursões têm uma função semelhante aos loops “for” e “while”. To
 Aqui está um exemplo de código que utiliza recursão para calcular o fatorial de um número. A cada chamada recursiva, a pilha armazena o valor de ‘X’ e o multiplica pelo próximo número menor, até que a condição base seja atingida, quando ‘X’ é menor ou igual a 1. Nesse momento, a recursão termina e o valor do fatorial é retornado.</p>
 </blockquote>
 <h3 id="exemplo-de-código-2">Exemplo de Código</h3>
-<p><img src="https://i.ibb.co/LJYrr72/Captura-de-tela-de-2023-09-21-09-20-03.png" alt=""><br>
+<p><img class="paragraph" src="https://i.ibb.co/LJYrr72/Captura-de-tela-de-2023-09-21-09-20-03.png" alt=""><br>
 <a href="https://github.com/Caracioly/algoritmos/blob/main/codigos/fatorial.py">Copiar</a></p>
 <h1 id="quicksort">Quicksort</h1>
 <ol>
@@ -178,7 +180,7 @@ A essência do Quicksort é a escolha de um elemento especial chamado de “piv�
 Este código divide a lista em partes menores e maiores em relação ao pivô e, em seguida, chama a função Quicksort recursivamente para ordenar essas partes. O pivô é inserido entre as partes ordenadas, criando uma lista ordenada completa.</p>
 </blockquote>
 <h3 id="exemplo-de-código-3">Exemplo de Código:</h3>
-<p><img src="https://i.ibb.co/MVb2PjB/Captura-de-tela-de-2023-09-21-09-20-15.png" alt=""><br>
+<p><img class="paragraph" src="https://i.ibb.co/MVb2PjB/Captura-de-tela-de-2023-09-21-09-20-15.png" alt=""><br>
 <a href="https://github.com/Caracioly/algoritmos/blob/main/codigos/quicksort.py">Copiar</a></p>
 <h1 id="tabelas-hash">Tabelas Hash</h1>
 <ol>
@@ -196,7 +198,7 @@ A prevenção e tratamento de colisões em tabelas hash são aspectos cruciais d
 As tabelas hash têm uma ampla gama de aplicações. Elas podem ser utilizadas como bancos de dados, caches de memória, ferramentas de verificação de integridade de dados e componentes essenciais em algoritmos de criptografia. Para que elas desempenhem seu papel com eficiência, é necessário escolher um tamanho adequado para a tabela, visando evitar colisões frequentes e garantir um funcionamento otimizado.</p>
 </blockquote>
 <h3 id="exemplo-de-código-4">Exemplo de Código</h3>
-<p><img src="https://i.ibb.co/yY8jcwh/Captura-de-tela-de-2023-09-21-09-22-42.png" alt=""><br>
+<p><img class="paragraph" src="https://i.ibb.co/yY8jcwh/Captura-de-tela-de-2023-09-21-09-22-42.png" alt=""><br>
 <a href="https://github.com/Caracioly/algoritmos/blob/main/codigos/hash.py">Copiar</a></p>
 <h1 id="pesquisa-em-largura">Pesquisa em Largura</h1>
 <ol>
